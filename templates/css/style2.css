@@ -1,0 +1,717 @@
+/*! =========================================================
+*
+* Styling document for the rvwg.de website. Developed by Felicitas Pojtinger (PFX, PojntFX)
+* (c) 2017 Nils Reichert & Felicitas Pojtinger
+*
+* =========================================================
+*
+*
+*                       _oo0oo_
+*                      o8888888o
+*                      88" . "88
+*                      (| -_- |)
+*                      0\  =  /0
+*                    ___/`---'\___
+*                  .' \|     |// '.
+*                 / \|||  :  |||// \
+*                / _||||| -:- |||||- \
+*               |   | \\  -  /// |   |
+*               | \_|  ''\---/''  |_/ |
+*               \  .-\__  '-'  ___/-. /
+*             ___'. .'  /--.--\  `. .'___
+*          ."" '<  `.___\_<|>_/___.' >' "".
+*         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+*         \  \ `_.   \_ __\ /__ _/   .-` /  /
+*     =====`-.____`.___ \_____/___.-`___.-'=====
+*                       `=---='
+*
+*     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*
+*               Butter Bless:  "No Bugs"
+*
+* ========================================================= */
+
+
+/* BACKGROUND */
+body {
+  /* background-image: url(../../../fileadmin/assets/Bilder/bg.jpg);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: auto;
+  
+  */
+  padding-top: 70px;
+  background-image: repeating-linear-gradient(67deg, #FFBB74, #FFBB74 3px, #F6B46E 3px, #F6B46E 6px);
+}
+
+
+/* TEXT STYLING */
+
+body, p, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300; 
+  line-height: 1.5em;
+}
+
+h1, .h1 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 100;
+  font-size: 3.8em;
+}
+
+h2n, .h2n {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 2.6em;
+}
+
+h2, .h2 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 100;
+  font-size: 2.6em;
+}
+
+h3, .h3 {
+  font-size: 1.825em;
+  line-height: 1.4em;
+  margin: 20px 0 10px;
+}
+
+h4, .h4 {
+  font-size: 1.3em;
+  line-height: 1.4em;
+}
+
+h5, .h5 {
+  font-size: 1.25em;
+  line-height: 1.4em;
+  margin-bottom: 15px;
+}
+
+h6, .h6 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.alert.alert-success a, .alert.alert-success .alert-link {
+  color: #000;
+}
+
+.btn, .btn:hover, .btn:focus, .btn:active, .btn.active, .btn:focus:active, .btn:hover:active, .btn.active:focus, .btn.active:hover, .open > .btn.dropdown-toggle, .open > .btn.dropdown-toggle:focus, .open > .btn.dropdown-toggle:hover, .btn.btn-default, .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active, .btn.btn-default.active, .btn.btn-default:focus:active, .btn.btn-default:hover:active, .btn.btn-default.active:focus, .btn.btn-default.active:hover, .open > .btn.btn-default.dropdown-toggle, .open > .btn.btn-default.dropdown-toggle:focus, .open > .btn.btn-default.dropdown-toggle:hover, .navbar .navbar-nav > li > a.btn, .navbar .navbar-nav > li > a.btn:hover, .navbar .navbar-nav > li > a.btn:focus, .navbar .navbar-nav > li > a.btn:active, .navbar .navbar-nav > li > a.btn.active, .navbar .navbar-nav > li > a.btn:focus:active, .navbar .navbar-nav > li > a.btn:hover:active, .navbar .navbar-nav > li > a.btn.active:focus, .navbar .navbar-nav > li > a.btn.active:hover, .open > .navbar .navbar-nav > li > a.btn.dropdown-toggle, .open > .navbar .navbar-nav > li > a.btn.dropdown-toggle:focus, .open > .navbar .navbar-nav > li > a.btn.dropdown-toggle:hover, .navbar .navbar-nav > li > a.btn.btn-default, .navbar .navbar-nav > li > a.btn.btn-default:hover, .navbar .navbar-nav > li > a.btn.btn-default:focus, .navbar .navbar-nav > li > a.btn.btn-default:active, .navbar .navbar-nav > li > a.btn.btn-default.active, .navbar .navbar-nav > li > a.btn.btn-default:focus:active, .navbar .navbar-nav > li > a.btn.btn-default:hover:active, .navbar .navbar-nav > li > a.btn.btn-default.active:focus, .navbar .navbar-nav > li > a.btn.btn-default.active:hover, .open > .navbar .navbar-nav > li > a.btn.btn-default.dropdown-toggle, .open > .navbar .navbar-nav > li > a.btn.btn-default.dropdown-toggle:focus, .open > .navbar .navbar-nav > li > a.btn.btn-default.dropdown-toggle:hover {
+  background-color: white;
+  color: #000;
+}
+
+.btn-default {
+  background-image: linear-gradient(white 0px, white 100%);
+}
+
+.btn.btn-primary, .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active, .btn.btn-primary.active, .btn.btn-primary:active:focus, .btn.btn-primary:active:hover, .btn.btn-primary.active:focus, .btn.btn-primary.active:hover, .open > .btn.btn-primary.dropdown-toggle, .open > .btn.btn-primary.dropdown-toggle:focus, .open > .btn.btn-primary.dropdown-toggle:hover, .navbar .navbar-nav > li > a.btn.btn-primary, .navbar .navbar-nav > li > a.btn.btn-primary:hover, .navbar .navbar-nav > li > a.btn.btn-primary:focus, .navbar .navbar-nav > li > a.btn.btn-primary:active, .navbar .navbar-nav > li > a.btn.btn-primary.active, .navbar .navbar-nav > li > a.btn.btn-primary:active:focus, .navbar .navbar-nav > li > a.btn.btn-primary:active:hover, .navbar .navbar-nav > li > a.btn.btn-primary.active:focus, .navbar .navbar-nav > li > a.btn.btn-primary.active:hover, .open >
+.navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle, .open >
+.navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle:focus, .open >
+.navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle:hover {
+  background-color: orange;
+  color: #FFFFFF;
+}
+
+.btn-primary {
+  background-image: linear-gradient(orange 0px, orange 0px)
+}
+
+/* NAVBAR */
+/* set navbar and footer color (pc)*/
+.navbar-semitransparent {
+  background-color:  rgba(0, 0, 0, .8);
+}
+/* set second level navbar color (pc)*/
+.navbar .dropdown-menu li > a:hover, .navbar .dropdown-menu li > a:focus, .navbar.navbar-default .dropdown-menu li > a:hover, .navbar.navbar-default .dropdown-menu li > a:focus {
+  color: rgba(0, 0, 0, 1);
+  background-color: grey;
+}
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+.dropdown-menu > li > a {
+  color: #fff;
+  text-align: left;
+}
+
+.navbar {
+  margin: 0px;
+}
+
+/* SET NAVBAR COLLAPSE POINT */
+@media (max-width: 1100px) {
+.navbar-header {
+  float: none;
+}
+.navbar-left,.navbar-right {
+  float: none !important;
+}
+.navbar-toggle {
+  display: block;
+}
+.navbar-collapse {
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+.navbar-collapse.collapse {
+  display: none!important;
+}
+.navbar-nav {
+  float: none!important;
+  margin-top: 7.5px;
+}
+.navbar-nav>li {
+  float: none;
+}
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.collapse.in{
+  display:block !important;
+}
+}
+
+/*media all*/
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/*set second level navbar color (mobile) */
+.navbar-nav .open .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* CONTENT */
+/* set outer content div settings */
+.rvwg-content {
+  padding-top: 90px;
+}
+
+/* set inner content div settings (strange typo3 div syntax)*/
+.page-box-content{ 
+  background-color: white;
+  padding: 2%;
+}
+
+/* set .alert .alert-info settings */
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #000;
+}
+
+/* */
+.bs-callout {
+  margin: 0px;
+  border-radius: 0px;
+}
+
+/* set flexslider slider button colors */
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  line-height: 1;
+  display: inline-block;
+  content: '\f001';
+  color: black;
+}
+
+
+
+/* set settings for callouts */
+.bs-callout-info {
+  border-left-color: #EE7C01;
+}
+
+.bs-callout {
+  padding: 2px;
+  margin: 20px 0;
+  border: 1px solid #e6e6e6;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+
+/* button styling */
+h4-exp {
+  font-size: 1.3em;
+  line-height: 1.4em;
+  color: #EF7B00;
+}
+
+.login-exp {
+  padding-bottom: 10px;
+}
+
+.btn-info {
+  margin-right: 20px;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+.btn-darkred {
+  background-color: orangered;
+}
+
+.btn-darkblue {
+  background-color: darkblue;
+}
+
+.btn-lightblue {
+  background-color: deepskyblue;
+}
+
+.container-carousel {
+  margin-top: 80px;
+}
+
+p-exp {
+  font-size: 80%;
+}
+
+h4-c-exp [
+font-size: 80%;
+]
+
+.main {
+  padding: 20px;
+}
+
+.btn-default .btn-read-more {
+  background-color: deepskyblue;
+}
+
+.btn, .btn:hover, .btn:focus, .btn:active, .btn.active, .btn:focus:active, .btn:hover:active, .btn.active:focus, .btn.active:hover, .open > .btn.dropdown-toggle, .open > .btn.dropdown-toggle:focus, .open > .btn.dropdown-toggle:hover, .btn.btn-default, .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active, .btn.btn-default.active, .btn.btn-default:focus:active, .btn.btn-default:hover:active, .btn.btn-default.active:focus, .btn.btn-default.active:hover, .open > .btn.btn-default.dropdown-toggle, .open > .btn.btn-default.dropdown-toggle:focus, .open > .btn.btn-default.dropdown-toggle:hover, .navbar .navbar-nav > li > a.btn, .navbar .navbar-nav > li > a.btn:hover, .navbar .navbar-nav > li > a.btn:focus, .navbar .navbar-nav > li > a.btn:active, .navbar .navbar-nav > li > a.btn.active, .navbar .navbar-nav > li > a.btn:focus:active, .navbar .navbar-nav > li > a.btn:hover:active, .navbar .navbar-nav > li > a.btn.active:focus, .navbar .navbar-nav > li > a.btn.active:hover, .open > .navbar .navbar-nav > li > a.btn.dropdown-toggle, .open > .navbar .navbar-nav > li > a.btn.dropdown-toggle:focus, .open > .navbar .navbar-nav > li > a.btn.dropdown-toggle:hover, .navbar .navbar-nav > li > a.btn.btn-default, .navbar .navbar-nav > li > a.btn.btn-default:hover, .navbar .navbar-nav > li > a.btn.btn-default:focus, .navbar .navbar-nav > li > a.btn.btn-default:active, .navbar .navbar-nav > li > a.btn.btn-default.active, .navbar .navbar-nav > li > a.btn.btn-default:focus:active, .navbar .navbar-nav > li > a.btn.btn-default:hover:active, .navbar .navbar-nav > li > a.btn.btn-default.active:focus, .navbar .navbar-nav > li > a.btn.btn-default.active:hover, .open > .navbar .navbar-nav > li > a.btn.btn-default.dropdown-toggle, .open > .navbar .navbar-nav > li > a.btn.btn-default.dropdown-toggle:focus, .open > .navbar .navbar-nav > li > a.btn.btn-default.dropdown-toggle:hover {
+  background-color: grey;
+  color: white;
+}
+
+.btn-default {
+  background-image: linear-gradient(grey 0px, grey 100%);
+}
+
+.awesomeness {
+  background: red; /* not working, let's see some red */
+  background: -moz-linear-gradient( top ,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 255, 0, 1) 15%,
+    rgba(0, 255, 0, 1) 30%,
+    rgba(0, 255, 255, 1) 50%,
+    rgba(0, 0, 255, 1) 65%,
+    rgba(255, 0, 255, 1) 80%,
+    rgba(255, 0, 0, 1) 100%);
+  background: -webkit-gradient(linear,  left top,  left bottom, 
+    color-stop(0%, rgba(255, 0, 0, 1)), 
+    color-stop(15%, rgba(255, 255, 0, 1)),
+    color-stop(30%, rgba(0, 255, 0, 1)),
+    color-stop(50%, rgba(0, 255, 255, 1)),
+    color-stop(65%, rgba(0, 0, 255, 1)),
+    color-stop(80%, rgba(255, 0, 255, 1)),
+    color-stop(100%, rgba(255, 0, 0, 1)));
+}
+
+.awesomeness {
+  width: 100%;
+  height: 100%;
+}
+
+/* set news font size */
+.lead {
+  font-size: 1em;
+}
+
+/* set news heading size */
+h3, .h3 {
+  font-size: 1;
+  line-height: 1.4em;
+  margin: 20px 0 10px;
+}
+
+/* set news heading first layer size */
+h2, .h2 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+}
+
+/* set home page container settings */
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content-background-top {
+  margin-top: 50px;
+  margin-bottom: -10px;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: -15px;
+}
+
+/*
+@media only screen and (min-device-widht: 480px) {
+.page-box-content {
+background-color: white;
+padding: 0%;
+margin-left: -20px;
+}
+}
+*/
+
+.btn, .btn:hover, .btn:focus, .btn:active, .btn.active, .btn:focus:active, .btn:hover:active, .btn.active:focus, .btn.active:hover, .open > .btn.dropdown-toggle, .open > .btn.dropdown-toggle:focus, .open > .btn.dropdown-toggle:hover, .btn.btn-default, .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active, .btn.btn-default.active, .btn.btn-default:focus:active, .btn.btn-default:hover:active, .btn.btn-default.active:focus, .btn.btn-default.active:hover, .open > .btn.btn-default.dropdown-toggle, .open > .btn.btn-default.dropdown-toggle:focus, .open > .btn.btn-default.dropdown-toggle:hover, .navbar .navbar-nav > li > a.btn, .navbar .navbar-nav > li > a.btn:hover, .navbar .navbar-nav > li > a.btn:focus, .navbar .navbar-nav > li > a.btn:active, .navbar .navbar-nav > li > a.btn.active, .navbar .navbar-nav > li > a.btn:focus:active, .navbar .navbar-nav > li > a.btn:hover:active, .navbar .navbar-nav > li > a.btn.active:focus, .navbar .navbar-nav > li > a.btn.active:hover, .open > .navbar .navbar-nav > li > a.btn.dropdown-toggle, .open > .navbar .navbar-nav > li > a.btn.dropdown-toggle:focus, .open > .navbar .navbar-nav > li > a.btn.dropdown-toggle:hover, .navbar .navbar-nav > li > a.btn.btn-default, .navbar .navbar-nav > li > a.btn.btn-default:hover, .navbar .navbar-nav > li > a.btn.btn-default:focus, .navbar .navbar-nav > li > a.btn.btn-default:active, .navbar .navbar-nav > li > a.btn.btn-default.active, .navbar .navbar-nav > li > a.btn.btn-default:focus:active, .navbar .navbar-nav > li > a.btn.btn-default:hover:active, .navbar .navbar-nav > li > a.btn.btn-default.active:focus, .navbar .navbar-nav > li > a.btn.btn-default.active:hover, .open > .navbar .navbar-nav > li > a.btn.btn-default.dropdown-toggle, .open > .navbar .navbar-nav > li > a.btn.btn-default.dropdown-toggle:focus, .open > .navbar .navbar-nav > li > a.btn.btn-default.dropdown-toggle:hover {
+  background-color: orange;
+  color: white;
+}
+
+.btn-default {
+  background-image: linear-gradient(orange 0px, orange 100%);
+}
+
+h3, .h3 {
+  margin: 0 0 10px;
+}
+
+.extra {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bs-callout {
+  border: 1px solid #fff;
+}
+
+.bs-callout-info h4 {
+  color: #f07b01;
+}
+
+.pager li>a, .pager li>span {
+  border: 0px;
+}
+
+.col-md-8 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 0px;
+  padding-right: 15px;
+}
+
+h1, .h1 {
+  font-size: 2em;
+}
+
+.twitter {
+  display: none;
+  visibility: hidden;
+}
+
+.share {
+  display: none;
+  visibility: hidden;
+}
+
+.like {
+  display: none;
+  visibility: hidden;
+}
+
+.pager {
+  display: none;
+  visibility: hidden;
+}
+
+.thumbnail {
+  border: 0px;
+}
+
+/* NAVBAR STYLING */
+@media (max-width: 991px) {
+.navbar-header {
+  float: none;
+}
+.navbar-left,.navbar-right {
+  float: none !important;
+}
+.navbar-toggle {
+  display: block;
+}
+.navbar-collapse {
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+.navbar-collapse.collapse {
+  display: none!important;
+}
+.navbar-nav {
+  float: none!important;
+  margin-top: 7.5px;
+}
+.navbar-nav>li {
+  float: none;
+}
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+}
+.collapse.in{
+  display:block !important;
+}
+}
+
+@media (min-width: 1200px)
+bootstrap.min.c…?1484033811:14
+.container {
+  width: 1170px;
+}
+
+@media (max-width: 1199px)
+_navbar.scss:3
+.navbar .navbar-nav > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* TOP CONTENT STYLING */
+#content-top {
+  /* padding: 150px 0px 150px 0px; */
+  margin-bottom: 100px;
+}
+
+/* MAIN CONTENT STYLING */
+#content-main {
+  padding: 20px;
+  /* margin-top: 100px; */
+}
+
+/* GENERAL CONTENT STYLING */
+rvwg-content {
+  background-color: white;
+  /* margin-top: 100px; */
+}
+
+.alert.alert-info {
+  background-color: #fff;
+  color: #000;
+  background-image: linear-gradient(#0ab1fc 0px,  #0ab1fc 100%);
+}
+.alert.alert-warning.alert-danger {
+  color: #000;
+}
+.alert.alert-danger {
+  background-color: #ff1100;
+  color: #fff;
+  background-image: linear-gradient(#d80f01 0px, #d80f01 100%);
+}
+.alert.alert-warning {
+  background-color: #fbc53c;
+  color: #000;
+  background-image: linear-gradient(#ffd600 0px, #ffd600 100%);
+}
+.alert.alert-success {
+  background-color: #fff;
+  background-image: linear-gradient(#00cc00 0px, #00cc00 100%);
+  color: #000;
+}
+
+.well {
+  background-color: #fff;
+  color: #000;
+  background-image: linear-gradient(#fff 0px,  #fff 100%);
+  border: 0px;
+  box-shadow: inset 0 1px 3px rgb(255,255,255), 0 1px 0 rgb(255,255,255);
+}
+
+.bs-callout {
+  background-color: #fff;
+  color: #000;
+  background-image: linear-gradient(#fff 0px,  #fff 100%);
+  border: 0px;
+  box-shadow: inset 0 0px 0px rgb(255,255,255), 0 0px 0 rgb(255,255,255);
+  border-radius: 0px;
+}
+
+.bs-callout-danger {
+  background-image: linear-gradient(#ff1100 0px, #ff1100 100%);
+  color: #fff;
+}
+
+.bs-callout-warning {
+  background-image: linear-gradient(#fbc53c 0px, #fbc53c 100%);
+  color: #fff;
+}
+
+.bs-callout-info {
+  background-image: linear-gradient(#fff 0px, #fff 100%);
+  color: #000;
+}
+
+.bs-callout-primary {
+  background-image: linear-gradient(#fff 0px, #fff 100%);
+  color: #000;
+}
+
+.bs-callout-success{
+  background-image: linear-gradient(#55b559 0px, #55b559 100%);
+  color: #000;
+}
+
+/* RESPONSIVE GOOGLE CALENDAR */
+.googleCalendar{
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 100% ;
+}
+
+.googleCalendar iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* GENERAL LINK STYLING */
+a, a:hover, a:focus {
+  color: #000;
+}
+
+/* LOGIN STYLING */
+legend {
+  border-bottom: 0;
+  display: none;
+}
+.form-group .checkbox label, .form-group .radio label, .form-group label {
+  font-size: 14px;
+  line-height: 1.4285;
+  color: #000;
+  font-weight: 300;
+}
+
+.form-group.is-focused .form-control {
+  background-image: linear-gradient(rgb(255, 165, 0), rgb(255, 165, 0)), linear-gradient(rgb(255, 165, 210), rgb(255, 165, 0));
+}
+
+.form-group.is-focused label, .form-group.is-focused label.control-label {
+  color: #000;
+}
+
+/*media all*/
+.tree li a {
+  text-decoration: none;
+  color: orange;
+}
+
+/*pagination style */
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+  background-color: orange;
+  border-color: orange;
+  color: #FFFFFF;
+  box-shadow: 0 4px 5px 0 rgba(156, 39, 176, 0.14), 0 1px 10px 0 rgba(156, 39, 176, 0.12), 0 2px 4px -1px rgba(156, 39, 176, 0.2);
+}
+
+/* navbar activated button styling */
+/*media all*/
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  background-image: linear-gradient(orange 0px, orange 100%);
+}
+
+/* flexslider left-right-button styling */
+.flex-direction-nav a {
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+}
+
+.flex-direction-nav a:before {
+  color: #fff;
+}
+
+/* GLOBAL RESPONSIVE TABLES */
+table{
+  padding: 5px;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 800px)  {
+  
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+}
+
+/* Hide table headers (but not display: none;, for accessibility) */
+thead { 
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+tr { 
+  border-top: 1px solid orange; 
+  margin-bottom: 5px; 
+  margin-top: 5px
+}
+td { 
+  /* Behave  like a "row" */
+  border: none;
+  /*          border-bottom: 1px solid #eee; */
+  position: relative;
+}
+
+td:before { 
+  /* Label the data */
+  content: attr(data-title);
+  display: inline-block;
+  width: 35%; 
+  padding-right: 10px; 
+  white-space: nowrap;
+}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+}
+td:before { 
+  /* Now like a table header */
+  position: absolute;
+  /* Top/left values mimic padding */
+  top: 6px;
+  left: 6px;
+  width: 45%; 
+  padding-right: 10px; 
+  white-space: nowrap;
+}
+
+@media only screen and (max-width:480px) {
+td { 
+  padding-left:0; 
+}
+td:first-child {
+  padding-left:0;
+}
+td:before { 
+  top:0;
+  width:0; 
+  padding-right:0;
+}
+}

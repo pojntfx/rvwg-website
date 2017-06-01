@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Template file for the&quot;macina_searchbox&quot;extension.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+</head>
+<body>
+    <h3>Template file for the &quot;macina_searchbox&quot; extension.</h3>
+    <p><b>Available Markers:</b></p>
+    
+    <!-- ###SEARCHBOX_STATIC### start -->
+    
+<!--     <form action="/suche.html"> -->
+<!--         <input type="text" value="" name="tx_indexedsearch[sword]" placeholder="Suchbegriff eingeben"> -->
+<!--         <input type="submit" value="Suchen"> -->
+<!--    </form>     -->
+    
+    
+
+<form method="get" id="xajax_form_kesearch_pi1" name="xajax_form_kesearch_pi1"  action="###FORM_ACTION###" class="static" ###ONSUBMIT###>
+
+	<input type="hidden" name="id" value="###FORM_TARGET_PID###" />
+	###HIDDENFIELDS###
+
+        <input type="text" id="ke_search_sword" name="tx_kesearch_pi1[sword]"  value="###SWORD_VALUE###" onfocus="if(this.value==this.defaultValue)this.value=''" />	
+        <input type="submit" value="Suchen">
+<!--	<input type="text" id="ke_search_sword" name="tx_kesearch_pi1[sword]"  value="###SWORD_VALUE###" onfocus="###SWORD_ONFOCUS###" /> -->
+<!--	<input type="image" id="kesearch_submit" src="typo3conf/ext/ke_search/res/img/kesearch_submit.png" alt="###SUBMIT_VALUE###" class="submit" onclick="document.getElementById('pagenumber').value=1; document.getElementById('xajax_form_kesearch_pi1').submit();" /> -->
+
+	<input id="pagenumber" type="hidden" name="tx_kesearch_pi1[page]" value="###HIDDEN_PAGE_VALUE###" />
+	<input id="resetFilters" type="hidden" name="tx_kesearch_pi1[resetFilters]" value="0" />
+	<input id="sortByField" type="hidden" name="tx_kesearch_pi1[sortByField]" value="###SORTBYFIELD###" />
+	<input id="sortByDir" type="hidden" name="tx_kesearch_pi1[sortByDir]" value="###SORTBYDIR###" />
+
+	<div id="kesearch_filters">###FILTER###</div>
+
+	<!-- ###SHOW_SPINNER### begin -->
+	<!-- <div id="kesearch_updating_filters">###SPINNER###<br /></div> -->
+	<!-- ###SHOW_SPINNER### end -->
+	<!-- <span class="resetbutt">###RESET###</span> -->
+	<!-- <span class="submitbutt">###SUBMIT###</span> -->
+
+
+</form>  
+
+
+
+
+
+    <!-- ###SEARCHBOX_STATIC### end -->
+
+</body>
+</html>

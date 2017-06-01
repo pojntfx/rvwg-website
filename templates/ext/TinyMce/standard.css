@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+//------------------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------------
+@font-face{
+    font-family:"netminMeta";
+    src:url("../../fonts/Meta/1377966/ff7aa537-8e40-4f5e-9c8f-c5bd078c58db.eot?#iefix");
+    src:url("../../fonts/Meta/1377966/ff7aa537-8e40-4f5e-9c8f-c5bd078c58db.eot?#iefix") format("eot"),url("../../fonts/Meta/1377966/4ce43a49-0d61-4c34-8054-465d5981fd0b.woff2") format("woff2"),url("../../fonts/Meta/1377966/d7b73a86-9fc7-41b4-a367-cbbd20039787.woff") format("woff"),url("../../fonts/Meta/1377966/7fc1eb11-127b-4452-9067-a7e4b1b321d6.ttf") format("truetype");
+}
+td, pre {color:#000;}
+
+/* Site rules */
+body {
+   /* background: #000 url('somebg.gif'); */
+   background: #8fc1ca;
+   color:#000; 
+   font-family:"netminMeta", Verdana, Arial, Helvetica, sans-serif; 
+   font-size:15px; 
+   margin:10px;
+}
+
+/* TinyMCE specific rules */
+body.mceContentBody {
+   background: #FFF;
+}
+
+.mceContentBody a {
+   color: red !important; /* FF requires a important here */
+}
+
+
+@font-face{
+    font-family:'FontAwesome';
+    font-weight:normal;
+    font-style:normal;
+    src:url('http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.eot?v=4.6.0');
+    src:url('http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.eot?#iefix&v=4.6.0') format('embedded-opentype'),
+        url('http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.woff2?v=4.6.0') format('woff2'),
+        url('http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.woff?v=4.6.0') format('woff'),
+        url('http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.ttf?v=4.6.0') format('truetype'),
+        url('http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/fonts/fontawesome-webfont.svg?v=4.6.0#fontawesomeregular') format('svg');
+}
+
+
+
+.download-pdf-spezial:before{
+    content:url(../../img/png-icons/pdf.png);
+    position:relative;
+    left:0px;
+    top:10px;
+    padding-right: 10px;
+}
+
+.external-link-new-window::before, .external-link::before, 
+.internal-link::before, .internal-link-new-window::before, 
+.download::before, .download-pdf::before, .mail::before {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-right: 0.2em;
+    text-decoration: inherit;
+}
+
+.external-link-new-window::before {
+    content: "";
+}
+.external-link::before {
+    content: "";
+}
+.internal-link::before {
+    content: "";
+}
+.internal-link-new-window::before {
+    content: "";
+}
+.download::before {
+    content: "";
+}
+.download-pdf::before {
+    content: "\f1c1";
+}
+.mail::before {
+    content: "";
+}
+
+.btn {
+  border-radius: 3px;
+  line-height: 22px;
+  outline: none;
+  padding: 8px 19px;
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transition: background .2s linear, border .2s linear, color .2s linear;
+          transition: background .2s linear, border .2s linear, color .2s linear;
+  white-space: normal;
+}
+
+.btn-default {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #ffc578 0%, #f68000 100%) repeat scroll 0 0;
+    text-shadow: none;
+    color:#4E4D4D;
+}
+
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
